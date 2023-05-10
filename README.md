@@ -21,10 +21,13 @@
     - Cluster security group
 
 ## IAM Service Roles
-- Autoscaling Role
-- EC2 Role
-- EC2RoleInstanceProfile
-- ECS Role
+- Autoscaling Role (Autoscaling role to verify the instance frequently and set u the autoscaling as required)
+    - aws-cicd-demo-asg-role
+- EC2 Role (For the EC2 instances to run ECS agent and register instances to ECS)
+    - aws-cicd-ec2-role
+- Task Execution Role ( Task execution role to pull images from ECR, push logs to CloudWatch)
+- ECS Role (For ECS cluster to manage AWS resources)
+    - aws-cicd-demo-ecs-role
 
 ## Fargate Service 
 Deploy an ECS service on  AWS Fargate
