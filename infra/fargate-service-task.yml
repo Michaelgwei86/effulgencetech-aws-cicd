@@ -11,7 +11,7 @@ Parameters:
     Description: A name for the service
   ImageUrl:
     Type: String
-    Default: vamsichunduru/ecs-demo:v1
+    Default: michaelgwei86/effulgence-cicd-image:v1
     Description: The url of a docker image that contains the application process that
                  will handle the traffic for this service
   ContainerPort:
