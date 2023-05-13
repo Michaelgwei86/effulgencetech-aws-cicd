@@ -6,5 +6,5 @@ Resources:
       Properties:
         TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo:
-          ContainerName: "ecs-demo-service"
+          ContainerName: "aws-cicd-demo-service"
           ContainerPort: 80
