@@ -37,7 +37,7 @@ phases:
       - docker push $REPOSITORY_URI:$TAG      
       - echo "Docker Image Push to ECR Completed -  $REPOSITORY_URI:$TAG & $REPOSITORY_URI:latest"      
       # The name as has to be same as the container name the task definition
-      - printf '[{"name":"ecs-demo-service","imageUri":"%s"}]' $REPOSITORY_URI:$TAG > imagedefinitions.json
+      - printf '[{"name":"aws-cicd-demo-service","imageUri":"%s"}]' $REPOSITORY_URI:$TAG > imagedefinitions.json
       - printf '{"ImageURI":"%s"}' $REPOSITORY_URI:$TAG > imageDetail.json
 
 artifacts:
